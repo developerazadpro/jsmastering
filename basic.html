@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+  <!-- practice 1 -->
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+
+
+<!-- JavaScript display possibilites -->
+<p>JavaScript can display data in four possible ways</p>
+<ul>
+  <li>innerHTML</li>
+  <li>document.write()</li>
+  <li>window.alert()</li>
+  <li>console.log()</li>
+</ul>
+<button type="button" id="demo1" onclick="changeHTMLText()">Click to change HTML</button>
+
+<script>
+
+  // practice 1
+  function myFunction(){
+    document.getElementById("demo").innerHTML = 'Hello david, How are you?';
+  }
+
+  // practice 2
+  function changeHTMLText(){
+    document.getElementById("demo1").innerHTML = 'Text changed by innnerHTML'; 
+  }
+  console.log(5 + 5);//10
+  console.log('5' + 5);//55
+  console.log(5 + '5');//55
+  console.log('5' + '5');//55
+  console.log(5 + 'five');//5five
+  console.log('5' + 'five');//5five
+
+  var number = '5';
+  var string = 'five';
+  console.log(parseInt(number) + string);// 5five
+  //window.alert('Hello David');
+</script>
+
+</body>
+</html>
