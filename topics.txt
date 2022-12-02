@@ -1,0 +1,20 @@
+01. variable
+02. data types
+03. let vs const vs var
+04. array
+05. object
+06. function
+07. loop
+08. switch
+09. compare by value compare by reference
+10. pass by value pass by reference
+11. js oops
+
+
+Some projects
+---------------------------
+Local Storage
+Profile Builder
+Color game
+Toda App Project
+ES5, ES6
