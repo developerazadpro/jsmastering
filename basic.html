@@ -12,7 +12,7 @@
 
 
 
-<!-- JavaScript display possibilites -->
+<!--practice 2: JavaScript display possibilites -->
 <p>JavaScript can display data in four possible ways</p>
 <ul>
   <li>innerHTML</li>
@@ -21,6 +21,14 @@
   <li>console.log()</li>
 </ul>
 <button type="button" id="demo1" onclick="changeHTMLText()">Click to change HTML</button>
+
+
+<!-- practice 3: multiple variable using singe statement -->
+<p>Try in Console</p>
+
+
+<!-- practive 4: var vs let vs const -->
+<p>Before 2015, JS has only global scope and function scope. ES6 introduce let and const</p>
 
 <script>
 
@@ -43,7 +51,111 @@
   var number = '5';
   var string = 'five';
   console.log(parseInt(number) + string);// 5five
-  //window.alert('Hello David');
+  
+  //practice 3
+
+  var a=5, b=6, c=7;
+  console.log(a+b+c);
+
+
+  // const vs let vs var
+
+  let x = 1; // can not redeclare, reinitialize, have block scope
+  let y = 3
+  function letVarConst(){
+    let x = 1;
+    let y = 3;
+    console.log(x);
+    console.log(y);
+
+  }
+  
+  console.log(x);
+  console.log(y);
+
+// hoisting
+
+carName = 'Hyndai';
+var carName;
+console.log(carName);
+
+carColor = "Black";
+//let carColor;// errow show
+console.log(carColor);
+
+const PI = '3.14160';
+console.log(PI);
+//const PI = '3.1416';//can not redeclare, reinitialize
+
+// Operator
+/*
+Arithmatic operator  => +, -, /,*, %, ++, --, **(exponentiation(ES6))
+Assginment operator  => =, +=, -=, *=, /=, %x, **= , x** = y equal x = x**y
+Comparison operator  => >, >=, <, <=, ==, ===, !=, !===
+Logical operator     => &&, ||, !
+Conditional operator => 
+Ternary operator     => ?
+
+*/
+
+
+// Type of operator
+
+var a = '10';
+console.log(typeof(a));
+// exponentiation
+
+var a = 5**3;
+console.log(a);
+console.log(Math.pow(5,2));
+
+console.log(1>>2);
+
+
+// data types
+/*
+number
+string
+boolean
+array
+object
+undefined
+*/
+
+var car = {carName:'Volvo', carColor:'Black', carModel:'Ferari'};// associative array normally object in array
+console.log(car.carModel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 </body>
